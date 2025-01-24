@@ -1,0 +1,39 @@
+
+/* -- Scrollbar con color -- */
+
+/* Mostrar scrollbar cuando sea necesario */
+.scrollbar-hide {
+    overflow-y: auto; 
+  }
+  
+  /* Anchura del scrollbar */
+  .scrollbar-hide::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  /* Color del scrollbar */
+  .scrollbar-hide::-webkit-scrollbar-thumb {
+    background-color: #f3f4f6; 
+    border-radius: 8px;
+  }
+  
+  /* Cambio de color al pasar el cursor sobre el scrollbar */
+  .scrollbar-hide::-webkit-scrollbar-thumb:hover {
+    background-color: #e5e7eb;
+  }
+
+  /* -- Scrollbar con transparente -- */
+
+  /* Sccrollbar transparente */
+.scrollbar-transparent::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scrollbar transparente */
+.scrollbar-transparent::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.scrollbar-transparent::-webkit-scrollbar-track {
+  background: transparent;
+}
